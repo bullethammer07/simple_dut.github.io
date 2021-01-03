@@ -27,11 +27,12 @@
 
         .center_image_container {
             width: 1490px;
-            height: 100px;
+            height: 150px;
             /* border: 3px solid purple; */
             margin: auto auto;
             text-align: center;
-            background-color: lawngreen;
+            /* background-color: lawngreen; */
+            margin: 5px 5px;
         }
 
         .main_content_container {
@@ -44,18 +45,23 @@
 
         #left_navigation_panel {
             float: left;
-            /* border: 3px solid purple; */
+            border: 3px solid darkgray;
             height: 100%;
             width: 30%;
-            background-color: grey;
+            /* background-color: grey; */
+            margin-top: 0px;
+            margin-right: 0px;
+            border-radius: 10px;
         }
 
         #right_main_content_window {
             float: right;
-            /* border: 3px solid purple; */
+            border: 3px solid darkgray;
             height: 100%;
-            width: 70%;
-            background-color: hotpink;
+            width: 69.5%;
+            /* background-color: hotpink; */
+            margin-left: 5px;
+            border-radius: 10px;
         }
     </style>
 
@@ -144,6 +150,10 @@
                         </ul>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
                     <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li> -->
@@ -165,17 +175,18 @@
 
     <div class="center_container">
         <div class="center_image_container">
-            Top Banner Image goes here !!...
+            <!-- Top Banner Image goes here !!... -->
+            <img src="/img/chip-feat.jpg" alt="Error loading Image :( " style="width:100%;height:100%;object-fit:cover; border-radius: 10px;">
         </div>
         <div class="main_content_container">
             <!-- This is the main content container !!... -->
 
             <span id="left_navigation_panel">
-                Left Nevigation Panel
+                <!-- Left Nevigation Panel -->
             </span>
 
             <span id="right_main_content_window">
-                Right main content window
+                <!-- Right main content window -->
             </span>
         </div>
     </div>
