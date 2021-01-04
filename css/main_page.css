@@ -11,10 +11,10 @@
 .center_image_container {
     width: 1490px;
     height: 100px;
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
     margin: auto auto;
     text-align: center;
-    /* background-color: lawngreen; */
+    background-color: lawngreen;
     margin: 5px 5px;
 }
 

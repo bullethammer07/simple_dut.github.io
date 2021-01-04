@@ -12,6 +12,13 @@
 
     <title>Simple DUT</title>
 
+    <!-- Font Added from fonts.google  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> -->
+
+
     <!-- Linking the CSS File -->
     <!-- <link rel="stylesheet" href="/css/main_page.css"> -->
     <style>
@@ -27,12 +34,15 @@
 
         .center_image_container {
             width: 1490px;
-            height: 150px;
+            height: 200px;
             /* border: 3px solid purple; */
             margin: auto auto;
             text-align: center;
             /* background-color: lawngreen; */
             margin: 5px 5px;
+            background-image: url("/img/img2.jpg");
+            border-radius: 10px;
+            opacity: 50;
         }
 
         .main_content_container {
@@ -62,6 +72,16 @@
             /* background-color: hotpink; */
             margin-left: 5px;
             border-radius: 10px;
+        }
+
+        .top_image_text {
+            font-size: 60px;
+            color: white;
+            padding-top: 100px;
+            padding-right: 40px;
+            float: right;
+            font-family: 'Open Sans Condensed', sans-serif;
+            /* opacity: 50; */
         }
     </style>
 
@@ -176,7 +196,8 @@
     <div class="center_container">
         <div class="center_image_container">
             <!-- Top Banner Image goes here !!... -->
-            <img src="/img/img2.gif" alt="Error loading Image :( " style="width:100%;height:100%;object-fit:cover; border-radius: 10px;">
+            <!-- <img src="/img/img2.jpg" alt="Error loading Image :( " style="width:100%;height:100%;object-fit:cover; border-radius: 10px;"> -->
+            <p class="top_image_text">Home</p>
         </div>
         <div class="main_content_container">
             <!-- This is the main content container !!... -->
