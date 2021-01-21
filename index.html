@@ -21,7 +21,22 @@
 
     <!-- Linking the CSS File -->
     <!-- <link rel="stylesheet" href="/css/main_page.css"> -->
+
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+
     <style>
+        pre[class*="language-"] {
+            font-size: 0.8em;
+        }
+    </style>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         #image_container {
             height: 50px;
         }
@@ -67,11 +82,12 @@
         #right_main_content_window {
             float: right;
             border: 3px solid darkgray;
-            height: 100%;
+            height: auto;
             width: 69.5%;
             /* background-color: hotpink; */
-            margin-left: 5px;
+            /* margin-left: 5px; */
             border-radius: 10px;
+            padding: 50px 50px;
         }
 
         .top_image_text {
@@ -83,6 +99,46 @@
             font-family: 'Open Sans Condensed', sans-serif;
             /* opacity: 50; */
         }
+
+        .toolbar-item button {
+            cursor: pointer !important;
+            color: white !important;
+            border: 1px solid white !important;
+            border-radius: 15px !important;
+            padding: 5px 14px !important;
+        }
+
+        .toolbar-item a {
+            cursor: pointer !important;
+            color: white !important;
+            border: 1px solid white !important;
+            border-radius: 15px !important;
+            padding: 5px 14px !important;
+            margin-right: 25px;
+            margin-left: 10px;
+        }
+
+        .content {
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            margin: 50px;
+        }
+
+        .container {
+            /* background-color: red; */
+            /* width: 60vw; */
+            margin: auto;
+            padding: 32px 0;
+            font-family: 'Roboto', sans-serif;
+            justify-content: left;
+        }
+
+        #right_main_content_window li {
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        
     </style>
 
 </head>
@@ -208,6 +264,66 @@
 
             <span id="right_main_content_window">
                 <!-- Right main content window -->
+                <div class="container">
+                    <ol>
+                        <li><b><u>Boiler Plate</u> : </b>This is just some template JS code
+                            <pre class="language-js line-numbers">
+                            <code>
+                            let val1 = 35;
+                            let val2 = [1,2,3,4];
+            
+                            console.log(`Values are :: ${val1} and ${val2}`),
+                            console.log(`Values are :: ${val1} and ${val2}`),
+                            console.log(`Values are :: ${val1} and ${val2}`),
+                            console.log(`Values are :: ${val1} and ${val2}`),
+                            console.log(`Values are :: ${val1} and ${val2}`),
+                            </code>
+                            </pre>
+                        </li>
+                        <li> <h3> <b><u>Verilog Code</u> : </b> </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat sunt iure quod tempora expedita quo at, enim consequatur aliquid atque officia, sapiente ducimus sint iusto placeat veritatis excepturi obcaecati laudantium cumque natus magnam pariatur. Iusto animi id natus doloribus commodi exercitationem ratione eum nemo quasi, repellendus suscipit dolor dicta provident alias doloremque cumque autem beatae. Facilis, ducimus ea! Qui facilis labore in fugiat error placeat saepe quaerat. Itaque, provident expedita quos at minus sunt non ducimus placeat fugit cum nulla ab blanditiis impedit repellendus tenetur veritatis quae voluptatem! Reiciendis autem aliquam delectus amet necessitatibus magnam eligendi tempora illum similique id? Enim quod omnis magni laboriosam explicabo commodi exercitationem, repellendus eius, sit ipsum alias neque sunt itaque culpa fugiat ratione doloribus totam cupiditate quibusdam eaque labore dolorem! Reiciendis quaerat molestiae delectus incidunt commodi voluptatem repudiandae illum! Corporis perspiciatis quo dicta itaque? Asperiores consequatur dignissimos nulla laboriosam quos, similique dicta cupiditate nisi! In tempora recusandae eaque necessitatibus? Cupiditate ipsam dolorum aliquam sapiente eveniet nemo odit quaerat accusantium quod vero libero ab nisi atque totam dolore quam dolorem quo ipsum fuga, sunt animi amet est ullam sint? Perspiciatis, laborum blanditiis? Iusto odit veniam eaque ducimus perferendis repudiandae expedita? Illo doloremque labore ad.</p>
+                            <pre data-line="12,14-16" class="line-numbers language-verilog" style="max-height: 30em;"> <!-- This give a scroll bar to the code / Also highlights line no 12 an 14-18-->
+                            <code>
+                                //-------------------------------
+                                //     Counter Verilog Code 
+                                //-------------------------------
+                                module counter(clk,
+                                               reset,
+                                               out);
+            
+                                input clk;
+                                input reset;
+                                output reg [3:0] out;
+                                
+                                always@(posedge clk);
+                                  begin
+                                    if(rst == 1'b0)
+                                      begin out <= 'd0;' end
+                                    else
+                                      begin
+                                        out <= out + 1;
+                                      end
+                                  end
+                                always@(posedge clk);
+                                  begin
+                                    if(rst == 1'b0)
+                                      begin out <= 'd0;' end
+                                    else
+                                      begin
+                                        out <= out + 1;
+                                      end
+                                  end
+                                
+                                endmodule                
+                            </code>
+                            </pre>
+                        </li>
+            
+                        <li><b><u>Verilog Code</u> : </b>This is just some sample verilog code
+                            <pre data-src="counter.v" data-download-link data-download-link-label="Download this Code" class="line-numbers language-verilog" style="max-height: 30em;"> <!-- This give a scroll bar to the code / Also highlights line no 12 an 14-18--></pre>
+                        </li>
+                    </ol>
+                </div>
             </span>
         </div>
     </div>
