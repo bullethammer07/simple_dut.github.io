@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#image_container {
+    height: 50px;
+}
+
+.center_container {
+    width: 1500px;
+    /* border: 3px solid purple; */
+    margin: auto;
+}
+
+.center_image_container {
+    width: 1490px;
+    height: 200px;
+    /* border: 3px solid purple; */
+    margin: auto auto;
+    text-align: center;
+    /* background-color: lawngreen; */
+    margin: 5px 5px;
+    background-image: url("/img/img2.jpg");
+    border-radius: 10px;
+    opacity: 50;
+}
+
+.main_content_container {
+    width: 1490px;
+    height: 1000px;
+    /* border: 3px solid purple; */
+    margin: auto auto;
+    text-align: center;
+}
+
+#left_navigation_panel {
+    float: left;
+    border: 3px solid darkgray;
+    height: 100%;
+    width: 30%;
+    /* background-color: grey; */
+    margin-top: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+}
+
+#right_main_content_window {
+    float: right;
+    border: 3px solid darkgray;
+    height: auto;
+    width: 69.5%;
+    /* background-color: hotpink; */
+    /* margin-left: 5px; */
+    border-radius: 10px;
+    padding: 50px 50px;
+}
+
+.top_image_text {
+    font-size: 60px;
+    color: white;
+    padding-top: 100px;
+    padding-right: 40px;
+    float: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* opacity: 50; */
+}
+
+.toolbar-item button {
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+}
+
+.toolbar-item a {
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin: 50px;
+}
+
+.container {
+    /* background-color: red; */
+    /* width: 60vw; */
+    margin: auto;
+    padding: 32px 0;
+    font-family: 'Roboto', sans-serif;
+    justify-content: left;
+}
+
+#right_main_content_window li {
+    text-align: left;
+    margin-top: 50px;
+}
